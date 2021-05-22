@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    {{PAGE_CSS}}
+    <title>{{PAGE_TITLE}}</title>
+</head>
+
+<body>
+
+    <a id="top"></a>
+
+    <div class="wrap">
+
+        <header>
+            <a href=""><img src="{{SITE_LOGO}}" alt="{{SITE_NAME}}"></a>
+            <h1>
+                {{SITE_NAME}}
+                <small>{{SITE_SLOGAN}}</small>
+            </h1>
+        </header>
+
+        <nav>
+            <a href="/">Início</a>
+            <a href="/">Cadastro</a>
+        </nav>
+
+        <main>
+
+            <article>{{PAGE_CONTENT}}</article>
+
+            <aside>{{PAGE_SIDEBAR}}</aside>
+
+        </main>
+
+        <footer>
+
+            <div class="footer_tools">
+
+                <a href="/">H</a>
+
+                <div class="copyright">{{SITE_COPYRIGHT}}</div>
+
+                <a href="#top">T</a>
+
+            </div>
+
+            <div class="footer_menu">
+
+                <div>
+                    <a href="/">Contatos</a>
+                    <a href="/">Privacidade</a>
+                    <a href="/">Ajuda</a>
+                </div>
+
+                <div>
+                    <a href="/">Site</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">GitHub</a>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    {{PAGE_JAVASCRIPT}}
+</body>
+
+</html>
