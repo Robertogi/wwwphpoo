@@ -4,7 +4,15 @@ require_once('db.class.php');
 
 class Site_config extends Db {
 
-    private $site_config;
+    protected $site_config;
+
+    public function __construct($config_file) {
+
+        Db::__construct($config_file);
+
+        $this->config();
+
+    }
 
     public function config() {
 
@@ -28,13 +36,14 @@ class Site_config extends Db {
             }
 
         endwhile;
-
-        return $this->site_config;
-
     }
+
+    public function get_config() {
+        return $this->site_config;
+    }
+
 }
 
 // Teste unitáro
 // $config = new Site_config('../_config.ini');
-// $C = $config->config();
-// print_r($C);
+// print_r($config->get_config());

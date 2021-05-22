@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS wwwphpoo;
-CREATE DATABASE wwwphpoo;
+CREATE DATABASE wwwphpoo CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE wwwphpoo;
 
 CREATE TABLE config (
@@ -26,7 +26,7 @@ INSERT INTO config (var, val) VALUES
 ('social_facebook', 'http://facebook.com/fuinhas'),
 ('siteOwner', 'André Luferat'),
 ('siteOwnerEmail', 'andre@luferat.net'),
-('siteYear', '2021'),
+('siteYear', '2019'),
 ('meta_author', 'André Luferat'),
 ('meta_description', 'Site sobre fuinhas, furões e afins.'),
 ('meta_keywords', 'fuinha, furão, pet, exótico, mamífero'),
